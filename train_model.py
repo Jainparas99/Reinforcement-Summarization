@@ -1,6 +1,7 @@
 from transformers import T5ForConditionalGeneration, Trainer, TrainingArguments, DataCollatorForSeq2Seq
 from transformers import AutoTokenizer
 
+#Train Model Code
 def train_model(tokenized_dataset, save_path="./new_model"):
     model = T5ForConditionalGeneration.from_pretrained("t5-small")
     tokenizer = AutoTokenizer.from_pretrained("t5-small")

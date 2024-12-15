@@ -2,6 +2,8 @@ import os
 from datasets import load_dataset
 from transformers import AutoTokenizer
 
+#Loading and Downloading the Datasets
+
 tokenizer = AutoTokenizer.from_pretrained("t5-small")
 
 def preprocess_data(examples):

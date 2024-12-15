@@ -1,0 +1,23 @@
+
+
+Please check the requirement.txt file and check the dependencies. 
+
+!pip install -r requirements.txt
+
+The uploaded files 
+1) train_model.py - This contain the code where the trainer function is defined for number of epochs and train and validation are defined.
+2) evaluate.py contain the ROUGE scorer code for both the models. 
+3) Data_preprocessing - Here the data is loaded and tokenized and saved. 
+4) RL_T5 - This is the .ipynb file where RL model is being trained and saved.
+5)executed_model_1 - Is the file which will call the pre-trained models and load the results for each.
+
+These files will take a some time (more than 30 minutes) so please use the pre-trained models.
+
+
+Datasets 
+I am using CNN/Dailymail which can be downloaded from the hugging face using this code
+
+This is already present in my code but you can also run it on your jupyter notebook.
+
+##dataset = load_dataset("cnn_dailymail", "3.0.0", cache_dir="./datasets/cnn_dailymail_clean")##
+ 
